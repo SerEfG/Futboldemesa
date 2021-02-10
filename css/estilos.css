@@ -1,0 +1,208 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Saca las viñetas */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body form p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    padding: 20px;
+    background-color: rgb(0, 137, 250);
+}
+
+header{
+    padding: 20px 0;
+    background-color: rgb(0, 137, 250);
+}
+
+/* HEADER */
+
+.logo img{
+    width: 1200px;
+}
+
+div.contenedor{
+    width: 1200px;
+    margin: 0 auto;
+}
+.navegacion{
+    background-color: rgb(4, 34, 204);
+}
+
+nav{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul::after{
+    content:'' ;
+    display: block;
+    clear: both;
+}
+
+nav > ul > li{
+    float: left;
+}
+
+/* -- Menú Principal Inicio Fase de Grupos Fase Final -- */
+nav ul li a{
+    display: inline-block;
+    width: 400px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+
+
+nav ul li a:hover{
+    background-color: rgb(224,224, 224);
+    color: rgb(4, 34, 204)
+}
+
+nav ul ul{
+    position: absolute;
+    top: 100%;
+    background-color: rgba(2, 2, 221, 0.746);
+    display: none;
+}
+
+
+nav ul li:hover > ul{
+    display: block;
+}
+
+
+/* CONTENIDO */
+
+div.contenido::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+main{
+    width: 70%;
+    float: left;
+    padding-right: 40px;
+}
+
+aside{
+    float:right;
+    width: 30%;
+    margin-top: 30px;
+}
+
+article{
+    margin-top: 30px;
+}
+
+h2{
+    color: rgb(1,1,230);
+    margin-bottom: 5px;
+}
+
+article img{
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+}
+
+article p{
+    line-height: 2;
+    text-align: justify;
+}
+
+.boton{
+    background-color: rgb(200,4,4);
+    padding: 5px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10cm;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul li{
+    padding: 8px 10px 8px 8px
+}
+
+aside ul li:hover{
+    background-color: rgb(0,0,177);
+    cursor: pointer;
+    border-radius: 5cm;
+}
+
+aside ul li a{
+    color: rgb(179, 17, 17);
+    text-decoration: none;
+}
+
+aside ul li:hover a{
+    color: rgb(216, 216, 216)
+}
+
+/* FOOTER */
+footer{
+    background-color: black;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+footer h2{
+    color: white;
+}
+
+footer .contenedor::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+footer div.nosotros{
+    float:left;
+    width: 30%;
+    color: white;
+}
+
+div.menu{
+    float: right;
+    width: 20%;
+    text-align: center;
+}
+
+footer nav{
+    width: auto;
+}
+
+footer nav ul li a{
+    width: auto;
+}
+
+p.copyright{
+    padding: 20 0;
+    text-align: center;
+    color:white;
+}
